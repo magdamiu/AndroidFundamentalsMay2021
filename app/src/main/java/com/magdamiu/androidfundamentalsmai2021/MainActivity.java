@@ -16,4 +16,6 @@ public class MainActivity extends AppCompatActivity {
         Log.v("tag-verbose", "my first verbose log");
         Log.w("tag-warning", "my first warning log");
     }
+
+    
 }
