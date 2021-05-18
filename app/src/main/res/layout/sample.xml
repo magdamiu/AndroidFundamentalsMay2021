@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/medium_space"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/please_add_your_name_here"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/buttonDisplayGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greetings"
+        android:onClick="displayGreetingsOnClick" />
+
+    <TextView
+        android:id="@+id/textViewGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hello adhajhaskdha hdak" />
+
+</LinearLayout>

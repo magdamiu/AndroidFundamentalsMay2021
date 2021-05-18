@@ -9,4 +9,7 @@
     <string name="no">NO</string>
     <string name="change_color">change color</string>
     <string name="search_for_android">Search for androids</string>
+    <string name="please_add_your_name_here">Please add your name here</string>
+    <string name="greetings">Greetings :)</string>
+    <string name="error_insert_name">Please insert a name</string>
 </resources>
