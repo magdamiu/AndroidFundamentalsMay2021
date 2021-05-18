@@ -4,9 +4,10 @@ plugins {
 
 android {
     compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.magdamiu.androidfundamentalsmai2021"
+        applicationId "com.biancaaghenitei.bilu"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
