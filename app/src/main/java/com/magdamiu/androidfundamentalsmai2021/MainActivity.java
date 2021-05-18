@@ -1,4 +1,4 @@
-package com.magdamiu.androidfundamentalsmai2021;
+package com.example.helloandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Log.e("tag-error", "my first error log");
         Log.v("tag-verbose", "my first verbose log");
         Log.w("tag-warning", "my first warning log");
