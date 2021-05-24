@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">Stefan\'s Demo App</string>
-    <string name="greeting">Happy Birthday to Adelin!</string>
+    <string name="app_name">Android Developer Fundamentals</string>
+    <string name="orange_textview">This is an orange TextView!</string>
+    <string name="green_textview">This is an green TextView!</string>
+    <string name="blue_textview">This is an blue TextView!</string>
+    <string name="blue_button">THIS IS A BUTTON</string>
+    <string name="green_button">THIS IS A GREEN BUTTON</string>
+    <string name="first_edittext">This is an EditText</string>
+    <string name="second_edittext">This is a new EditText</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="notify_me">Notify me :)</string>
+    <string name="auto_backup">Auto backup</string>
 </resources>
