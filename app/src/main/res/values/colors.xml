@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#ff3412</color>
+    <color name="peach">#fc987e</color>
+    <color name="light_green">#cdedd7</color>
+    <color name="light_green_blue">#7bccc6</color>
+    <color name="yellow">#fbc962</color>
+    <color name="light_moss_green">#a2c89c</color>
+    <color name="pink">#fb4482</color>
 </resources>
