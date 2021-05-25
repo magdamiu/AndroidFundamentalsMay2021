@@ -60,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/blue"
+            android:backgroundTint="@color/blue"
             android:text="@string/this_is_a_button" />
 
         <ImageView
@@ -76,7 +76,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:shadowColor="@color/green"
+            android:backgroundTint="@color/green"
             android:text="@string/this_is_a_green_button" />
 
     </LinearLayout>
