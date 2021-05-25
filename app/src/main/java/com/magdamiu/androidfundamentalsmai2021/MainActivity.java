@@ -5,25 +5,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String ANDROID_URL = "https://developer.android.com/";
 
     private EditText editTextName;
     private Button buttonDisplayGreetings;
     private TextView textViewGreetings;
 
+    private WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*setContentView(R.layout.activity_main);*/
-        setContentView(R.layout.sample);
+        /*setContentView(R.layout.sample);*/
+        // setContentView(R.layout.scrollview_sample);
+        setContentView(R.layout.webview_sample);
 
-        initViews();
+        loadUrl();
+
+        // initViews();
         displayLogs();
+    }
+
+    private void loadUrl() {
+        webView = findViewById(R.id.webViewSample);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl(ANDROID_URL);
     }
 
     private void initViews() {
