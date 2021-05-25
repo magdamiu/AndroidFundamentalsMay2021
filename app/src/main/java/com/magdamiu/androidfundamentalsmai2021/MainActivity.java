@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*setContentView(R.layout.activity_main);*/
-        setContentView(R.layout.sample);
+        setContentView(R.layout.code_challange_course_2);
 
-        initViews();
-        displayLogs();
+        //initViews();
+        //displayLogs();
     }
 
     private void initViews() {
