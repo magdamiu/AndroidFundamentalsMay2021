@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/coral"
+            android:gravity="center"
+            android:text="@string/this_is_an_orange_textview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/middle_blue_green"
+            android:gravity="center"
+            android:text="@string/this_is_a_green_textview"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/star_commando_blue"
+            android:gravity="center"
+            android:text="@string/this_is_a_blue_textview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal"
+            android:text="@string/this_is_a_button"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/palette"
+            android:src="@drawable/palette"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fern_green"
+            android:text="@string/this_is_a_green_button"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button"
+        android:background="@color/yellow"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:hint="@string/this_is_an_edittext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingTop="@dimen/medium_padding" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_padding" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="@string/this_is_a_new_edittext"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:buttonTint="@color/black"
+                android:text="@string/notify_me"
+                android:textSize="@dimen/medium_text" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:paddingStart="@dimen/large_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:text="@string/auto_backup"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_line"
+            android:background="@color/grey" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:numStars="5"
+            android:progressTint="@android:color/holo_red_light"
+            android:rating="4"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_line"
+            android:background="@color/grey" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:text="@string/yes"
+                android:textSize="@dimen/medium_text" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:text="@string/no"
+                android:textSize="@dimen/medium_text" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
