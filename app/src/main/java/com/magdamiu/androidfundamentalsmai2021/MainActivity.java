@@ -37,17 +37,24 @@ public class MainActivity extends AppCompatActivity {
         /*setContentView(R.layout.sample);*/
         // setContentView(R.layout.scrollview_sample);
         // setContentView(R.layout.webview_sample);
-        setContentView(R.layout.spinner_sample);
+//        setContentView(R.layout.spinner_sample);
+//        setContentView(R.layout.week3_code_challenge_2);
+        setContentView(R.layout.week3_code_challenge_1);
 
-        setAndroidVersions();
-        initialiseSpinnerAdapter();
-        setSpinnerAdapter();
-        handlingSpinnerListener();
+        EditText editTextEmail = findViewById(R.id.editTextEmail);
+        editTextEmail.setError("Fill the input with a valid email address");
+        EditText editTextPhone = findViewById(R.id.editTextPhone);
+        editTextPhone.setError("Fill the input with a valid phone number");
 
-        //loadUrl();
-
-        // initViews();
-        displayLogs();
+//        setAndroidVersions();
+//        initialiseSpinnerAdapter();
+//        setSpinnerAdapter();
+//        handlingSpinnerListener();
+//
+//        //loadUrl();
+//
+//        // initViews();
+//        displayLogs();
     }
 
     // step 1: data source for our spinner
