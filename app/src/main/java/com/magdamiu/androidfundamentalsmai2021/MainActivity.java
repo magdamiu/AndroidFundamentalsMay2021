@@ -20,14 +20,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final String ANDROID_URL = "https://developer.android.com/";
+
     private EditText editTextName;
     private EditText editTextEmail;
     private EditText editTextPhone;
     private Button buttonDisplayGreetings;
     private TextView textViewGreetings;
+
     private WebView webView;
+
     private Spinner spinnerAndroidVersions;
     private List<String> androidVersions;
     private ArrayAdapter<String> spinnerAdapter;
@@ -35,22 +37,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /* setContentView(R.layout.activity_main);
-        setContentView(R.layout.sample);
-        setContentView(R.layout.code_challenge_c2);
-        setContentView(R.layout.scrollview_sample);
-        setContentView(R.layout.webview_sample);
+        /*setContentView(R.layout.activity_main);*/
+        /*setContentView(R.layout.sample);*/
+        // setContentView(R.layout.scrollview_sample);
+        // setContentView(R.layout.webview_sample);
         setContentView(R.layout.spinner_sample);
-        setContentView(R.layout.code_challenge2_c3); */
-        setContentView(R.layout.code_challenge1_c3);
 
-        /* setAndroidVersions();
-        initSpinnerAdapter();
+        setAndroidVersions();
+        initialiseSpinnerAdapter();
         setSpinnerAdapter();
-        handlingSpinnerListener(); */
+        handlingSpinnerListener();
 
-        // loadUrl();
-        initViews();
+        //loadUrl();
+
+        // initViews();
         displayLogs();
     }
 
@@ -64,10 +64,11 @@ public class MainActivity extends AppCompatActivity {
         androidVersions.add("kitkat");
     }
 
-    // step 2: init adapter for our spinner
+
+    // step 2: initialise adapter for our spinner
     // ArrayAdapter is a default adapter
-    private void initSpinnerAdapter() {
-        spinnerAdapter = new ArrayAdapter<>(this,
+    private void initialiseSpinnerAdapter() {
+        spinnerAdapter = new ArrayAdapter<>(MainActivity.this,
                 android.R.layout.simple_spinner_item,
                 androidVersions);
     }
@@ -81,26 +82,28 @@ public class MainActivity extends AppCompatActivity {
     private void handlingSpinnerListener() {
         spinnerAndroidVersions.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String selectedAndroidVersion = androidVersions.get(position);
-                Toast.makeText(MainActivity.this, selectedAndroidVersion,
-                        Toast.LENGTH_LONG).show();
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedAndroidVersion = androidVersions.get(i);
+                Toast.makeText(MainActivity.this, selectedAndroidVersion, Toast.LENGTH_LONG).show();
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
         });
     }
 
-    // web view load url
+
+    // webview load url
     private void loadUrl() {
         webView = findViewById(R.id.webViewSample);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(ANDROID_URL);
     }
 
+
+    // init views for implementing a first simple form
     private void initViews() {
         editTextName = findViewById(R.id.editTextName);
         buttonDisplayGreetings = findViewById(R.id.buttonDisplayGreetings);

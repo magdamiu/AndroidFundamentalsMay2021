@@ -6,38 +6,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/medium_space">
+        android:padding="@dimen/medium_space"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:text="@string/long_text" />
+            android:text="@string/long_text"/>
 
         <TextView
+            android:layout_marginTop="@dimen/medium_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:text="@string/long_text" />
+            android:text="@string/long_text"/>
 
         <TextView
+            android:layout_marginTop="@dimen/medium_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:text="@string/long_text" />
+            android:text="@string/long_text"/>
 
         <TextView
+            android:layout_marginTop="@dimen/medium_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:text="@string/long_text" />
+            android:text="@string/long_text"/>
 
         <TextView
+            android:layout_marginTop="@dimen/medium_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_space"
-            android:text="@string/long_text" />
+            android:text="@string/long_text"/>
 
     </LinearLayout>
 
