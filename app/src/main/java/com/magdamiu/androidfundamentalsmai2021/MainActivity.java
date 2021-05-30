@@ -37,20 +37,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*setContentView(R.layout.activity_main);*/
-        /*setContentView(R.layout.sample);*/
-        // setContentView(R.layout.scrollview_sample);
-        // setContentView(R.layout.webview_sample);
+        /* setContentView(R.layout.activity_main);
+        setContentView(R.layout.sample);
+        setContentView(R.layout.code_challenge_c2);
+        setContentView(R.layout.scrollview_sample);
+        setContentView(R.layout.webview_sample);
         setContentView(R.layout.spinner_sample);
+        setContentView(R.layout.code_challenge2_c3); */
+        setContentView(R.layout.code_challenge1_c3);
 
-        setAndroidVersions();
+        /* setAndroidVersions();
         initialiseSpinnerAdapter();
         setSpinnerAdapter();
-        handlingSpinnerListener();
+        handlingSpinnerListener(); */
 
-        //loadUrl();
-
-        // initViews();
+        // loadUrl();
+        initViews();
         displayLogs();
     }
 
