@@ -12,6 +12,8 @@
     <string name="please_add_your_name_here">Please add your name here</string>
     <string name="greetings">Greetings :)</string>
     <string name="error_insert_name">Please insert a name</string>
+    <string name="error_insert_email">Fill the input with a valid email address</string>
+    <string name="error_insert_phone">Fill the input with a valid phone number</string>
     <string name="this_is_an_orange_textview">This is an orange TextView</string>
     <string name="this_is_a_green_textview">This is a green TextView</string>
     <string name="this_is_a_blue_textview">This is a blue TextView</string>
@@ -26,4 +28,10 @@
     <string name="long_text">Of course, you’d want to replace the URL after git remote add upstream with the appropriate clone URL for the original project repository. For the rest of this article, I’m going to assume you used upstream as the name for this additional Git remote. Now, you could try pushing changes to the original repository using git push at this point, but it would probably fail because you probably don’t have permission to push changes directly to the repository. Besides, it really wouldn’t be a good idea. That’s because other people might be working on the project as well, and how in the world would we keep track of everyone’s changes? That’s where branches come in.</string>
     <string name="text_on_the_left">text on the left</string>
     <string name="text_centered_in_parent">text centered in parent</string>
+    <string name="scroll_view_text">ScrollView: A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout, and place additional views within that LinearLayout.</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_amp_c"><![CDATA[I accept T&C]]></string>
+    <string name="submit">SUBMIT</string>
 </resources>
