@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="medium_text">23sp</dimen>
-    <dimen name="medium_space">16dp</dimen>
+    <dimen name="medium_space">12dp</dimen>
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="space_128">128sp</dimen>
+    <dimen name="space_256">256sp</dimen>
+    <dimen name="space_64">64sp</dimen>
 </resources>
