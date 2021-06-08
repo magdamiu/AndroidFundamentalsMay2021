@@ -1,21 +1,4 @@
 <resources>
-    <string name="app_name">Curs Android Fundamentals</string>
-    <string name="hello_world_from_android">Hello World from Android!</string>
-    <string name="this_is_my_first_textview">This is my first TextView</string>
-    <string name="i_am_a_button">I am a button</string>
-    <string name="write_your_name_here">Write your name here</string>
-    <string name="i_accept_terms_and_conditions">I accept Terms and Conditions</string>
-    <string name="yes">YES</string>
-    <string name="no">NO</string>
-    <string name="change_color">change color</string>
-    <string name="search_for_android">Search for androids</string>
-    <string name="please_add_your_name_here">Please add your name here</string>
-    <string name="greetings">Greetings :)</string>
-    <string name="error_insert_name">Please insert a name</string>
-    <string name="textview_3">TextView 3</string>
-    <string name="textview_2">TextView 2</string>
-    <string name="textview_1">TextView 1</string>
-    <string name="long_text">Of course, you’d want to replace the URL after git remote add upstream with the appropriate clone URL for the original project repository. For the rest of this article, I’m going to assume you used upstream as the name for this additional Git remote. Now, you could try pushing changes to the original repository using git push at this point, but it would probably fail because you probably don’t have permission to push changes directly to the repository. Besides, it really wouldn’t be a good idea. That’s because other people might be working on the project as well, and how in the world would we keep track of everyone’s changes? That’s where branches come in.</string>
-    <string name="text_on_the_right">text on the right</string>
-    <string name="text_centered_in_parent">text centered in parent</string>
+    <string name="app_name">Happy Birthday!</string>
+    <string name="happy_birthday_to_cristian">Happy birthday to Cristian!</string>
 </resources>
