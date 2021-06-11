@@ -12,17 +12,13 @@
     <string name="please_add_your_name_here">Please add your name here</string>
     <string name="greetings">Greetings :)</string>
     <string name="error_insert_name">Please insert a name</string>
-<<<<<<< HEAD
     <string name="textview_3">TextView 3</string>
     <string name="textview_2">TextView 2</string>
     <string name="textview_1">TextView 1</string>
     <string name="long_text">Of course, you’d want to replace the URL after git remote add upstream with the appropriate clone URL for the original project repository. For the rest of this article, I’m going to assume you used upstream as the name for this additional Git remote. Now, you could try pushing changes to the original repository using git push at this point, but it would probably fail because you probably don’t have permission to push changes directly to the repository. Besides, it really wouldn’t be a good idea. That’s because other people might be working on the project as well, and how in the world would we keep track of everyone’s changes? That’s where branches come in.</string>
     <string name="text_on_the_right">text on the right</string>
     <string name="text_centered_in_parent">text centered in parent</string>
-=======
-    <string name="long_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
     <string name="ANDROID_URL">https://developer.android.com/</string>
-    <string name="text_on_the_right">text on the right</string>
     <string name="text_below">text below</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
@@ -31,5 +27,5 @@
     <string name="login">LOGIN</string>
     <string name="wrong_phone_pattern">Please enter a valid phone number!</string>
     <string name="wrong_email_pattern">Please eneter a valid email address!\n</string>
->>>>>>> curs3_cc1
+    <string name="scroll_view_def">A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout, and place additional views within that LinearLayout.</string>
 </resources>
