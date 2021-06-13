@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="medium_text">23sp</dimen>
-    <dimen name="medium_space">16dp</dimen>
-    <dimen name="space_128">128dp</dimen>
-    <dimen name="space_64">64dp</dimen>
+    <dimen name="medium_text_size">24sp</dimen>
+    <dimen name="small_text_size">15sp</dimen>
+    <dimen name="margin_size">10dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="normal_size_text">20sp</dimen>
 </resources>
