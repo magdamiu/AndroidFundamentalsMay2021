@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logfile);
+        setContentView(R.layout.loginfile);
         initViews();
     }
 
@@ -44,11 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 textLogin.setText(successSubmit);
             } else {
                 phoneLogin.setError(getString(R.string.error_insert_phone));
-                Toast.makeText(MainActivity.this, getString(R.string.error_insert_phone), Toast.LENGTH_LONG).show();
             }
         } else {
             emailLogin.setError(getString(R.string.error_insert_email));
-            Toast.makeText(MainActivity.this, getString(R.string.error_insert_email), Toast.LENGTH_LONG).show();
         }
     }
 
