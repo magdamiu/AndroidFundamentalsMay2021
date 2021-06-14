@@ -1,131 +1,60 @@
 package com.magdamiu.androidfundamentalsmai2021;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String ANDROID_URL = "https://developer.android.com/";
 
-    private EditText editTextName;
-    private Button buttonDisplayGreetings;
-    private TextView textViewGreetings;
-
-    private WebView webView;
-
-    private Spinner spinnerAndroidVersions;
-    private List<String> androidVersions;
-    private ArrayAdapter<String> spinnerAdapter;
+    private EditText emailLogin;
+    private EditText phoneLogin;
+    CheckBox checkBoxLogin;
+    private Button buttonLogin;
+    private TextView textLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*setContentView(R.layout.activity_main);*/
-        /*setContentView(R.layout.sample);*/
-        // setContentView(R.layout.scrollview_sample);
-        // setContentView(R.layout.webview_sample);
-        setContentView(R.layout.spinner_sample);
-
-        setAndroidVersions();
-        initialiseSpinnerAdapter();
-        setSpinnerAdapter();
-        handlingSpinnerListener();
-
-        //loadUrl();
-
-        // initViews();
-        displayLogs();
+        setContentView(R.layout.logfile);
+        initViews();
     }
 
-    // step 1: data source for our spinner
-    private void setAndroidVersions() {
-        androidVersions = new ArrayList<>();
-        androidVersions.add("cupcake");
-        androidVersions.add("eclair");
-        androidVersions.add("pie");
-        androidVersions.add("donut");
-        androidVersions.add("kitkat");
-    }
-
-    // step 2: initialise adapter for our spinner
-    // ArrayAdapter is a default adapter
-    private void initialiseSpinnerAdapter() {
-        spinnerAdapter = new ArrayAdapter<>(MainActivity.this,
-                android.R.layout.simple_spinner_item,
-                androidVersions);
-    }
-
-    // step 3: set the adapter to our spinner
-    private void setSpinnerAdapter() {
-        spinnerAndroidVersions = findViewById(R.id.spinnerAndroidVersions);
-        spinnerAndroidVersions.setAdapter(spinnerAdapter);
-    }
-
-    private void handlingSpinnerListener() {
-        spinnerAndroidVersions.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String selectedAndroidVersion = androidVersions.get(i);
-                Toast.makeText(MainActivity.this, selectedAndroidVersion, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-    }
-
-    // webview load url
-    private void loadUrl() {
-        webView = findViewById(R.id.webViewSample);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl(ANDROID_URL);
-    }
-
-    // init views for implementing a first simple form
     private void initViews() {
-        editTextName = findViewById(R.id.editTextName);
-        buttonDisplayGreetings = findViewById(R.id.buttonDisplayGreetings);
-        textViewGreetings = findViewById(R.id.textViewGreetings);
+        emailLogin = findViewById(R.id.emailLogin);
+        phoneLogin = findViewById(R.id.phoneLogin);
+        checkBoxLogin = findViewById(R.id.checkboxLogin);
+        buttonLogin = findViewById(R.id.buttonLogin);
+        textLogin = findViewById(R.id.textLogin);
     }
 
-    private void displayLogs() {
-        Log.e("tag-error", "my first error log");
-        Log.v("tag-verbose", "my first verbose log");
-        Log.w("tag-warning", "my first warning log");
-    }
+    public void displaySubmitOnClick(View view) {
+        textLogin.setText("");
+        String email = emailLogin.getText().toString();
+        String phone = phoneLogin.getText().toString();
+        final String successSubmit = "Successfully submitted";
+        if (email.length() > 0 && Patterns.EMAIL_ADDRESS.matcher(email).find()) {
+            if (phone.length() == 10 && Patterns.PHONE.matcher(phone).find()) {
+                if (checkBoxLogin.isChecked()) {
 
-    private void clickOnDisplayGreetingsButton() {
-        buttonDisplayGreetings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+                    textLogin.setText(successSubmit);
+                } else {
+                    checkBoxLogin.setError(getString(R.string.error_check_t_and_c));
+                    Toast.makeText(MainActivity.this, getString(R.string.error_check_t_and_c), Toast.LENGTH_LONG).show();
+                }
+            } else {
+                phoneLogin.setError(getString(R.string.error_insert_phone));
+                Toast.makeText(MainActivity.this, getString(R.string.error_insert_phone), Toast.LENGTH_LONG).show();
             }
-        });
-    }
-
-    public void displayGreetingsOnClick(View view) {
-        textViewGreetings.setText("");
-        String inputName = editTextName.getText().toString();
-        if (inputName.length() > 0) {
-            textViewGreetings.setText(inputName);
         } else {
-            editTextName.setError(getString(R.string.error_insert_name));
-            Toast.makeText(MainActivity.this, getString(R.string.error_insert_name), Toast.LENGTH_LONG).show();
+            emailLogin.setError(getString(R.string.error_insert_email));
+            Toast.makeText(MainActivity.this, getString(R.string.error_insert_email), Toast.LENGTH_LONG).show();
         }
     }
 }
