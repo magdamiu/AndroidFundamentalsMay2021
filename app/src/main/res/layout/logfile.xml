@@ -36,12 +36,14 @@
         android:id="@+id/checkboxLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="setButtonEnableOnClick"
         android:text="@string/i_accept_terms_and_conditions" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:onClick="displaySubmitOnClick"
         android:text="@string/submit" />
 

@@ -41,13 +41,7 @@ public class MainActivity extends AppCompatActivity {
         final String successSubmit = "Successfully submitted";
         if (email.length() > 0 && Patterns.EMAIL_ADDRESS.matcher(email).find()) {
             if (phone.length() == 10 && Patterns.PHONE.matcher(phone).find()) {
-                if (checkBoxLogin.isChecked()) {
-
-                    textLogin.setText(successSubmit);
-                } else {
-                    checkBoxLogin.setError(getString(R.string.error_check_t_and_c));
-                    Toast.makeText(MainActivity.this, getString(R.string.error_check_t_and_c), Toast.LENGTH_LONG).show();
-                }
+                textLogin.setText(successSubmit);
             } else {
                 phoneLogin.setError(getString(R.string.error_insert_phone));
                 Toast.makeText(MainActivity.this, getString(R.string.error_insert_phone), Toast.LENGTH_LONG).show();
@@ -56,5 +50,9 @@ public class MainActivity extends AppCompatActivity {
             emailLogin.setError(getString(R.string.error_insert_email));
             Toast.makeText(MainActivity.this, getString(R.string.error_insert_email), Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void setButtonEnableOnClick(View view) {
+        buttonLogin.setEnabled(checkBoxLogin.isChecked());
     }
 }

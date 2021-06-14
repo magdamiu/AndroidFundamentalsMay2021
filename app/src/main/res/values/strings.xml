@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals</string>
     <string name="i_accept_terms_and_conditions">I accept Terms and Conditions!</string>
-    <string name="error_insert_email">Please insert a correct email!</string>
-    <string name="error_insert_phone">Please insert a correct phone number!</string>
-    <string name="error_check_t_and_c">You have to accept the terms and conditions!</string>
+    <string name="error_insert_email">Fill the input with a valid email address!</string>
+    <string name="error_insert_phone">Fill the input with a valid phone number!</string>
     <string name="login">LOGIN</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
