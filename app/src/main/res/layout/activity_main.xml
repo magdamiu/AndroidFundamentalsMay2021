@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/happy_birthday_to_christian"
-        android:textSize="@dimen/medium_text"
-        android:textColor="@color/black"
         android:layout_gravity="center"
+        android:text="@string/happy_birthday_to_christian"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
