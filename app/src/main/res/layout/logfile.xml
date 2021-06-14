@@ -19,9 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_space"
+        android:autofillHints="@string/email"
         android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:autofillHints="@string/email" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/phoneLogin"
@@ -51,8 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="@dimen/medium_space"
-        android:textSize="@dimen/medium_text"
         android:textColor="@color/green"
+        android:textSize="@dimen/medium_text"
         tools:text="Hello" />
 
 </LinearLayout>
