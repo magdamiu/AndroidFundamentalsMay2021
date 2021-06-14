@@ -53,15 +53,14 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_size"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
-            android:gravity="center"
             android:text="@string/this_is_a_button"
             android:textColor="@android:color/black"
             android:textSize="@dimen/small_text_size" />
 
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_100"
+            android:layout_height="@dimen/image_size"
             android:layout_margin="@dimen/margin_size"
             android:layout_weight="1"
             android:contentDescription="@string/android_logo"
@@ -73,10 +72,10 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_size"
             android:layout_weight="1"
-            android:background="#147D03"
-            android:gravity="center"
+            android:background="@color/green"
             android:text="@string/this_is_a_green_button"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/small_text_size" />
 
     </LinearLayout>
 
@@ -89,20 +88,19 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="@string/this_is_a_new_edittext"
             android:gravity="bottom"
-            android:inputType="textMultiLine"
-            android:text="@string/this_is_a_edittext"
-            android:textSize="@dimen/normal_size_text" />
+            android:hint="@string/this_is_a_edittext"
+            android:inputType="text" />
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints=""
+            android:autofillHints="@string/this_is_a_new_edittext"
             android:gravity="bottom"
-            android:inputType="textMultiLine"
-            android:text="@string/this_is_a_new_edittext"
-            android:textSize="@dimen/normal_size_text" />
+            android:hint="@string/this_is_a_new_edittext"
+            android:inputType="text" />
 
         <View
             android:layout_width="match_parent"
@@ -170,6 +168,5 @@
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
     </LinearLayout>
-
 </LinearLayout>
 
