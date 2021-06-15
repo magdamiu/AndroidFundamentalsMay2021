@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.course3_codechallenge2_scrollview);
-        setContentView(R.layout.course3_codechallenge2_framelayout);
-        //setContentView(R.layout.course3_codechallenge2_spinner);
+        //setContentView(R.layout.course3_codechallenge2_framelayout);
+        setContentView(R.layout.course3_codechallenge2_spinner);
 
         //setAndroidVersions();
         //initialiseSpinnerAdapter();
