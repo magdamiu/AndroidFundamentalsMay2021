@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.course3_codechallenge2_framelayout);
         setContentView(R.layout.course3_codechallenge2_spinner);
 
-        //setAndroidVersions();
-        //initialiseSpinnerAdapter();
-        //setSpinnerAdapter();
-        //handlingSpinnerListener();
+        setAndroidVersions();
+        initialiseSpinnerAdapter();
+        setSpinnerAdapter();
+        handlingSpinnerListener();
     }
 
     // step 1: data source for our spinner
