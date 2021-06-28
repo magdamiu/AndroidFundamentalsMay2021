@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Curs3</string>
+    <string name="login">LOGIN</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="terms_and_conditions">I accept T&amp;C</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus felis. Nulla facilisi. Cras in tristique eros. Aenean ante ex, maximus pellentesque dui vitae, lobortis pretium ipsum. Sed eu iaculis enim. Nam auctor dictum rutrum. Duis sapien lectus, iaculis mollis tellus a, venenatis ornare arcu. Vestibulum bibendum ipsum nulla, non hendrerit tellus scelerisque ut. Cras a rhoncus nisl, eu semper magna. Aliquam ornare mi eget neque iaculis, eu auctor dui aliquam. Quisque vestibulum volutpat fringilla. Cras dictum laoreet ante, aliquam euismod sem ultricies porttitor. Donec non quam enim. Nunc at tempus nisl.</string>
+    <string name="next_layout">next layout</string>
+    <string name="spinner_example">Spinner Example</string>
+</resources>
