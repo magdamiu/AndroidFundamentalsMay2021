@@ -25,4 +25,9 @@ public class StartActivity extends AppCompatActivity {
         Intent intentToStartEmailsActivity = new Intent(StartActivity.this, EmailsActivity.class);
         startActivity(intentToStartEmailsActivity);
     }
+
+    public void startConstraintActivityOnClick(View view) {
+        Intent intentToStartConstraintActivity = new Intent(StartActivity.this, ConstraintLayoutSampleActivity.class);
+        startActivity(intentToStartConstraintActivity);
+    }
 }

@@ -55,4 +55,7 @@ Nam aliquam volutpat enim, id aliquam ligula ullamcorper eget. Pellentesque eu v
 Nulla elit justo, imperdiet id sapien molestie, lobortis lobortis ipsum. Duis euismod feugiat facilisis. Nullam ac scelerisque magna. Nunc ante urna, viverra a fermentum in, placerat ut ex. Mauris volutpat eleifend leo, iaculis vestibulum urna molestie sed. Phasellus rhoncus, nunc sed mattis dictum, augue massa feugiat est, ac elementum urna quam nec leo. Curabitur mattis placerat elit a euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus dolor urna, vel rhoncus diam viverra sit amet. Nunc urna felis, mollis dictum vehicula vitae, semper eu nunc. Maecenas venenatis sed tellus vel ultricies. Donec quis scelerisque libero, eget condimentum augue. Mauris facilisis fermentum molestie. Vivamus purus mi, imperdiet at orci at, ultricies ultricies tortor. Morbi a fringilla lacus. Etiam porttitor venenatis tempor. Mauris vehicula orci ac malesuada sagittis. Nulla euismod dignissim sapien, vel mattis risus ornare eget. Nunc laoreet eleifend nisi quis fringilla. Aliquam.</string>
+    <string name="start_constraint_activity">Start Constraint Activity</string>
+    <string name="this_is_a_textview_in_a_constraintlayout">This is a TextView in a ConstraintLayout</string>
+    <string name="this_is_a_long_text_view_content">this is a long text view content</string>
 </resources>
