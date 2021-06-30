@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
             textViewGreetings.setText(inputName);
         } else {
             editTextName.setError(getString(R.string.error_insert_name));
-            Toast.makeText(MainActivity.this, getString(R.string.error_insert_name), Toast.LENGTH_LONG).show();
         }
     }
 }
