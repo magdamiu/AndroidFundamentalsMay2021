@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">curs 4</string>
+    <string name="no_description">null</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_magda">From Magda</string>
+    <string name="poem">Have yourself a merry little Christmas,\nLet your heart be light\nFrom now on, our troubles will be out of sight</string>
+    <string name="next_layout">Next Layout</string>
+    <string name="let_it_snow">Let it snow</string>
+    <string name="jingle_bells">Jingle bells</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Challenge1Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banana"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/android_1"
+            android:contentDescription="@string/no_description" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/android_2"
+            android:contentDescription="@string/no_description" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_green"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="360dp"
+            android:layout_height="528dp"
+            android:background="@color/amazon"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="312dp"
+            android:layout_height="480dp"
+            android:background="@color/jazzberry_jam"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="264dp"
+            android:layout_height="432dp"
+            android:background="@color/banana"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/android_3"
+            android:contentDescription="@string/no_description"
+            android:onClick="goToNextLayoutOnClick"
+            tools:ignore="UsingOnClickInXml" />
+
+    </FrameLayout>
+
+</LinearLayout>
