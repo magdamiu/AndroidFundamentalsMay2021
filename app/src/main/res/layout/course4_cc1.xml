@@ -30,26 +30,26 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ecfc00"/>
+            android:background="@color/yellow"/>
 
         <TextView
             android:layout_gravity="center"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:background="#1cb686"/>
+            android:layout_width="@dimen/dim_350"
+            android:layout_height="@dimen/dim_350"
+            android:background="@color/dark_green"/>
         <TextView
             android:layout_gravity="center"
-            android:layout_width="320dp"
-            android:layout_height="320dp"
-            android:background="#ff31ff"/>
+            android:layout_width="@dimen/dim_320"
+            android:layout_height="@dimen/dim_320"
+            android:background="@color/purple"/>
         <TextView
             android:layout_gravity="center"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:background="#eecf94"/>
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_300"
+            android:background="@color/bej"/>
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_200"
             android:src="@drawable/robot"
             android:layout_gravity="center"/>
     </FrameLayout>
