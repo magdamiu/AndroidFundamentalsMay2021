@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         /*setContentView(R.layout.sample);*/
         // setContentView(R.layout.scrollview_sample);
         // setContentView(R.layout.webview_sample);
-        setContentView(R.layout.spinner_sample);
+        setContentView(R.layout.week3_code_challenge_2);
 
-        setAndroidVersions();
+    /*    setAndroidVersions();
         initialiseSpinnerAdapter();
         setSpinnerAdapter();
-        handlingSpinnerListener();
+        handlingSpinnerListener();*/
 
         //loadUrl();
 
