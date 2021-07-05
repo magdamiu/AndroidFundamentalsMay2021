@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="8"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#eecf94"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+       <ImageView
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:src="@drawable/android_logo"/>
+        <ImageView
+           android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/robot"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dim_350"
+            android:layout_height="@dimen/dim_350"
+            android:background="@color/dark_green"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dim_320"
+            android:layout_height="@dimen/dim_320"
+            android:background="@color/purple"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_300"
+            android:background="@color/bej"/>
+        <ImageView
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_200"
+            android:src="@drawable/robot"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+</LinearLayout>

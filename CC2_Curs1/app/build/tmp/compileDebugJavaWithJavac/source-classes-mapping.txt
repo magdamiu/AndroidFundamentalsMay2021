@@ -1,0 +1,4 @@
+com/sebastianpitur/cc2curs1/BuildConfig.java
+ com.sebastianpitur.cc2curs1.BuildConfig
+com/sebastianpitur/cc2curs1/MainActivity.java
+ com.sebastianpitur.cc2curs1.MainActivity
