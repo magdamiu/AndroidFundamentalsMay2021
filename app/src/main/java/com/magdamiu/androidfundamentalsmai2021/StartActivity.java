@@ -22,7 +22,7 @@ public class StartActivity extends AppCompatActivity {
 
     public void startRecyclerViewActivityOnClick(View view) {
         // starts from the current activity, and moves the user to the EmailsActivity screen
-        Intent intentToStartEmailsActivity = new Intent(StartActivity.this, EmailsActivity.class);
+        Intent intentToStartEmailsActivity = new Intent(StartActivity.this, StudentActivity.class);
         startActivity(intentToStartEmailsActivity);
     }
 
