@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText emailLogin;
     private EditText phoneLogin;
-    private  CheckBox checkBoxLogin;
+    private CheckBox checkBoxLogin;
     private Button buttonLogin;
     private TextView textLogin;
 
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         String email = emailLogin.getText().toString();
         String phone = phoneLogin.getText().toString();
         final String successSubmit = "Successfully submitted";
-        if (email.length() > 0 && Patterns.EMAIL_ADDRESS.matcher(email).find()) {
-            if (phone.length() == 10 && Patterns.PHONE.matcher(phone).find()) {
+        if (validateEmail(email)) {
+            if (validatePhone(phone)) {
                 textLogin.setText(successSubmit);
             } else {
                 phoneLogin.setError(getString(R.string.error_insert_phone));
@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
         } else {
             emailLogin.setError(getString(R.string.error_insert_email));
         }
+    }
+
+    private boolean validateEmail(String email) {
+        return email.length() > 0 && Patterns.EMAIL_ADDRESS.matcher(email).find();
+    }
+
+    private boolean validatePhone(String phone) {
+        return phone.length() == 10 && Patterns.PHONE.matcher(phone).find();
     }
 
     public void setButtonEnableOnClick(View view) {
