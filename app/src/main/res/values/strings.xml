@@ -64,4 +64,6 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="browser">Browser</string>
     <string name="use_device_with_sim">Please use a device with an active SIM</string>
     <string name="hello_from_first_activity">hello from first activity</string>
+    <string name="sample_startactivityforresult">Sample startActivityForResult</string>
+    <string name="confirm_message">Yes, I\'m here! :)</string>
 </resources>
