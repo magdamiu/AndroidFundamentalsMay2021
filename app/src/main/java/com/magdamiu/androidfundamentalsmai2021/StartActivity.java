@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+
 public class StartActivity extends AppCompatActivity {
 
     @Override
@@ -29,5 +31,10 @@ public class StartActivity extends AppCompatActivity {
     public void startConstraintActivityOnClick(View view) {
         Intent intentToStartConstraintActivity = new Intent(StartActivity.this, ConstraintLayoutSampleActivity.class);
         startActivity(intentToStartConstraintActivity);
+    }
+
+    public void startFirstActivityOnClick(View view) {
+        Intent intentToStartFirstActivity = new Intent(StartActivity.this, FirstActivity.class);
+        startActivity(intentToStartFirstActivity);
     }
 }
