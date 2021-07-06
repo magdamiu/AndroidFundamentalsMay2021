@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Curs Android Fundamentals</string>
+    <string name="app_name">ViewGroups Example</string>
     <string name="hello_world_from_android">Hello World from Android!</string>
     <string name="this_is_my_first_textview">This is my first TextView</string>
     <string name="i_am_a_button">I am a button</string>
