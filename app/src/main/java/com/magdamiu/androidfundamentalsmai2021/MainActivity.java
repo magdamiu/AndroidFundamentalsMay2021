@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText emailLogin;
     private EditText phoneLogin;
-    CheckBox checkBoxLogin;
+    private  CheckBox checkBoxLogin;
     private Button buttonLogin;
     private TextView textLogin;
 
