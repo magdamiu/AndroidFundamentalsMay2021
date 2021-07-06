@@ -60,4 +60,8 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="this_is_a_long_text_view_content">this is a long text view content</string>
     <string name="button">Start Second Activity</string>
     <string name="start_firstactivity">Start FirstActivity</string>
+    <string name="call">Call</string>
+    <string name="browser">Browser</string>
+    <string name="use_device_with_sim">Please use a device with an active SIM</string>
+    <string name="hello_from_first_activity">hello from first activity</string>
 </resources>

@@ -4,17 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.magdamiu.androidfundamentalsmai2021.R;
 
 public class SecondActivity extends AppCompatActivity {
     private static final String SECOND_TAG = "SecondActivity";
 
+    private TextView textViewMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         Log.e(SECOND_TAG, "onCreate method was called");
+
+        textViewMessage = findViewById(R.id.textViewMessage);
+
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null) {
+            String messageReceived = bundle.getString(FirstActivity.MESSAGE);
+            textViewMessage.setText(messageReceived);
+        }
     }
 
     @Override
