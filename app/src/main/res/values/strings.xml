@@ -74,5 +74,7 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="start_constraint_activity">Start Constraint Activity</string>
     <string name="this_is_a_textview_in_a_constraintlayout">This is a TextView in a ConstraintLayout</string>
     <string name="this_is_a_long_text_view_content">this is a long text view content</string>
->>>>>>> 5d6f860e544545b03fc58c498004030c2b562d71
+=======
+    <string name="button">Start Second Activity</string>
+    <string name="start_firstactivity">Start FirstActivity</string>
 </resources>

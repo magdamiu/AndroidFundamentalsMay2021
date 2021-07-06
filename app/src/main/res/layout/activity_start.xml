@@ -26,5 +26,9 @@
         android:text="@string/start_constraint_activity"
         android:onClick="startConstraintActivityOnClick"/>
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_firstactivity"
+        android:onClick="startFirstActivityOnClick"/>
 </LinearLayout>
