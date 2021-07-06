@@ -9,23 +9,23 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmailsActivity extends AppCompatActivity {
+public class StudentActivity extends AppCompatActivity {
 
-    private List<Mail> emails;
+    private List<Student> students;
 
-    private RecyclerView recyclerViewEmails;
+    private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
-    private EmailAdapter emailAdapter;
+    private StudentAdapter studentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_emails);
+        setContentView(R.layout.activity_students);
 
         // data source for our RecyclerView
-        populateListOfEmails();
+        populateListOfStudents();
 
-        // init the ui elements
+        // init the UI elements
         initView();
 
         // set the linear layout manager to our recycler view
@@ -36,28 +36,25 @@ public class EmailsActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        recyclerViewEmails = findViewById(R.id.recyclerViewEmails);
+        recyclerView = findViewById(R.id.recyclerViewStudents);
     }
 
-    private void populateListOfEmails() {
-        emails = new ArrayList<>();
-        Mail newEmail = new Mail(1, "Magda", "Curs Android");
-        emails.add(newEmail);
+    private void populateListOfStudents() {
+        students = new ArrayList<>();
         int index;
-        for (int i = 1; i < 20; i++) {
+        for (int i = 0; i < 20; i++) {
             index = i + 1;
-            newEmail = new Mail(index, "Sender " + index, "Subject " + index);
-            emails.add(newEmail);
+            students.add(new Student(index, "FirstName " + index, "LastName " + index));
         }
     }
 
     private void setLayoutManager() {
         layoutManager = new LinearLayoutManager(this);
-        recyclerViewEmails.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
     }
 
     private void setAdapter() {
-        emailAdapter = new EmailAdapter(emails);
-        recyclerViewEmails.setAdapter(emailAdapter);
+        studentAdapter = new StudentAdapter(students);
+        recyclerView.setAdapter(studentAdapter);
     }
 }
