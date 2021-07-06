@@ -38,4 +38,10 @@
     <string name="long_text">Of course, you’d want to replace the URL after git remote add upstream with the appropriate clone URL for the original project repository. For the rest of this article, I’m going to assume you used upstream as the name for this additional Git remote. Now, you could try pushing changes to the original repository using git push at this point, but it would probably fail because you probably don’t have permission to push changes directly to the repository. Besides, it really wouldn’t be a good idea. That’s because other people might be working on the project as well, and how in the world would we keep track of everyone’s changes? That’s where branches come in.</string>
     <string name="text_on_the_right">text on the right</string>
     <string name="text_centered_in_parent">text centered in parent</string>
+    <string name="start_mainactivity">Start MainActivity</string>
+    <string name="start_recyclerview_activity">START RECYCLERVIEW ACTIVITY</string>
+    <string name="start_main_activity">START MAIN ACTIVITY</string>
+    <string name="start_constraint_activity">START CONSTRAINT ACTIVITY</string>
+    <string name="this_is_a_textview_in_a_constraintlayout">This is a TextView in a ConstraintLayout</string>
+    <string name="this_is_a_long_text_view_content">this is a long text view content</string>
 </resources>
