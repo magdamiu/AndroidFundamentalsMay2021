@@ -1,7 +1,5 @@
 package com.magdamiu.androidfundamentalsmai2021;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,7 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -110,11 +109,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clickOnDisplayGreetingsButton() {
-        buttonDisplayGreetings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        buttonDisplayGreetings.setOnClickListener(view -> {
 
-            }
         });
     }
 
@@ -125,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
             textViewGreetings.setText(inputName);
         } else {
             editTextName.setError(getString(R.string.error_insert_name));
-            Toast.makeText(MainActivity.this, getString(R.string.error_insert_name), Toast.LENGTH_LONG).show();
         }
     }
 }
