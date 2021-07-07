@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Curs Android Fundamentals</string>
+    <string name="app_name">Android Developer Fundamentals</string>
     <string name="hello_world_from_android">Hello World from Android!</string>
     <string name="this_is_my_first_textview">This is my first TextView</string>
     <string name="i_am_a_button">I am a button</string>
@@ -58,4 +58,11 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="start_constraint_activity">Start Constraint Activity</string>
     <string name="this_is_a_textview_in_a_constraintlayout">This is a TextView in a ConstraintLayout</string>
     <string name="this_is_a_long_text_view_content">this is a long text view content</string>
+    <string name="header_imagine">header_imagine</string>
+    <string name="poster_sparkling">poster_sparkling</string>
+    <string name="christmas_message">Have yourself a merry little Christmas, \nLet your heart be light\nFrom now on, our troubles will be out of sight</string>
+    <string name="let_it_snow">LET IT SNOW</string>
+    <string name="jingle_bells">JINGLE BELLS</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_magda">From Magda</string>
 </resources>
