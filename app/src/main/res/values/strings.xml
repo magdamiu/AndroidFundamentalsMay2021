@@ -77,4 +77,14 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
 =======
     <string name="button">Start Second Activity</string>
     <string name="start_firstactivity">Start FirstActivity</string>
+<<<<<<< HEAD
 </resources>
+=======
+    <string name="call">Call</string>
+    <string name="browser">Browser</string>
+    <string name="use_device_with_sim">Please use a device with an active SIM</string>
+    <string name="hello_from_first_activity">hello from first activity</string>
+    <string name="sample_startactivityforresult">Sample startActivityForResult</string>
+    <string name="confirm_message">Yes, I\'m here! :)</string>
+</resources>
+>>>>>>> 09a79282c9f442d4a6cd95743f4d0e44798bc2ce
