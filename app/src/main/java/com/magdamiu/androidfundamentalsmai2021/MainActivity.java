@@ -17,10 +17,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-<<<<<<< HEAD
-=======
 import java.util.regex.Pattern;
->>>>>>> curs3_cc1
 
 public class MainActivity extends AppCompatActivity {
     private static final String ANDROID_URL = "https://developer.android.com/";
@@ -30,25 +27,16 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextName;
     private Button buttonDisplayGreetings;
     private TextView textViewGreetings;
-<<<<<<< HEAD
 
     private WebView webView;
 
     private Spinner spinnerAndroidVersions;
     private List<String> androidVersions;
     private ArrayAdapter<String> spinnerAdapter;
-
-=======
-    private WebView webView;
-    private Spinner spinnerAndroidVersions;
-    private List<String> androidVersions;
-    private ArrayAdapter<String> spinnerAdapter;
->>>>>>> curs3_cc1
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*setContentView(R.layout.activity_main);*/
-<<<<<<< HEAD
         /*setContentView(R.layout.sample);*/
         // setContentView(R.layout.scrollview_sample);
         // setContentView(R.layout.webview_sample);
@@ -62,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         //loadUrl();
 
         // initViews();
-=======
 //        setContentView(R.layout.web_view_sample);
 //        load_url();
         setContentView(R.layout.spinner_sample);
@@ -70,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 //        initViews();
         initializeSpinnerAdapter();
         setSpinnerAdapter();
->>>>>>> curs3_cc1
         displayLogs();
     }
     // step 1:  data source for our spinner
@@ -88,26 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 androidVersions);
     }
 
-    private void setSpinnerAdapter() {
-        spinnerAndroidVersions = findViewById(R.id.spinnerAndroidVersions);
-        spinnerAndroidVersions.setAdapter(spinnerAdapter);
-    }
-
-    private void handlingSpinnerListener() {
-        spinnerAndroidVersions.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
-                String selectedAndroidVersion = androidVersions.get(i);
-                Toast.makeText(MainActivity.this, selectedAndroidVersion, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-    }
-
     private void load_url() {
         webView = findViewById(R.id.webViewSample);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -115,14 +81,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // step 1: data source for our spinner
-    private void setAndroidVersions() {
-        androidVersions = new ArrayList<>();
-        androidVersions.add("cupcake");
-        androidVersions.add("eclair");
-        androidVersions.add("pie");
-        androidVersions.add("donut");
-        androidVersions.add("kitkat");
-    }
 
     // step 2: initialise adapter for our spinner
     // ArrayAdapter is a default adapter
