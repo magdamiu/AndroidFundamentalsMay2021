@@ -11,6 +11,15 @@ public class Student extends RecyclerView.ViewHolder {
     public Student(@NonNull View itemView) {
         super(itemView);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
     public Student(@NonNull View itemView, String name, String surname) {
         super(itemView);
         this.name = name;
