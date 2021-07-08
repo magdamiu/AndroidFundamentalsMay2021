@@ -18,6 +18,15 @@
     <string name="long_text">Of course, you’d want to replace the URL after git remote add upstream with the appropriate clone URL for the original project repository. For the rest of this article, I’m going to assume you used upstream as the name for this additional Git remote. Now, you could try pushing changes to the original repository using git push at this point, but it would probably fail because you probably don’t have permission to push changes directly to the repository. Besides, it really wouldn’t be a good idea. That’s because other people might be working on the project as well, and how in the world would we keep track of everyone’s changes? That’s where branches come in.</string>
     <string name="text_on_the_right">text on the right</string>
     <string name="text_centered_in_parent">text centered in parent</string>
+    <string name="ANDROID_URL">https://developer.android.com/</string>
+    <string name="text_below">text below</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_amp_c"><![CDATA[I accept T&C]]></string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="wrong_phone_pattern">Please enter a valid phone number!</string>
+    <string name="wrong_email_pattern">Please eneter a valid email address!\n</string>
     <string name="start_mainactivity">Start MainActivity</string>
     <string name="start_recyclerview_activity">Start RecyclerView Activity</string>
     <string name="terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis nunc id enim porta porta. Nunc elementum dui at libero pulvinar, a rutrum sapien gravida. Pellentesque feugiat justo et est efficitur auctor. Maecenas scelerisque vel magna vel convallis. Sed massa nunc, sodales cursus condimentum sit amet, varius ac libero. Duis porta condimentum nulla. Aliquam iaculis, metus id cursus gravida, mi mauris semper massa, eget viverra diam ex et diam. Pellentesque quis dignissim orci.
