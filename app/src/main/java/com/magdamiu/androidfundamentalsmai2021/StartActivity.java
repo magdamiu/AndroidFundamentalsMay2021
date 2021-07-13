@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.DynamicFragmentActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -46,6 +48,16 @@ public class StartActivity extends AppCompatActivity {
 
     public void startFirstActivityOnClick(View view) {
         Intent intentToStartFirstActivity = new Intent(StartActivity.this, FirstActivity.class);
+        startActivity(intentToStartFirstActivity);
+    }
+
+    public void startStaticFragmentOnClick(View view) {
+        Intent intentToStartFirstActivity = new Intent(StartActivity.this, StaticFragmentActivity.class);
+        startActivity(intentToStartFirstActivity);
+    }
+
+    public void startDynamicFragmentOnClick(View view) {
+        Intent intentToStartFirstActivity = new Intent(StartActivity.this, DynamicFragmentActivity.class);
         startActivity(intentToStartFirstActivity);
     }
 }
