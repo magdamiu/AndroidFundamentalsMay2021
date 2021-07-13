@@ -43,4 +43,10 @@
         android:layout_height="wrap_content"
         android:text="@string/start_dynamic_fragment_in_activity"
         android:onClick="startDynamicFragmentOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_bundle_comm_fragment_activity"
+        android:onClick="startBundleCommFragmentOnClick"/>
 </LinearLayout>
