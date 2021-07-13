@@ -40,4 +40,14 @@ public class SumActivity extends AppCompatActivity {
         resultFragment.setArguments(bundle);
         HandlingFragments.initFragment(SumActivity.this, R.id.framePlaceholderSum, resultFragment);
     }
+
+    public void sendNumbersInMethodOnClick(View view) {
+        int firstNumber = Integer.parseInt(editTextFirstNumber.getText().toString());
+        int secondNumber = Integer.parseInt(editTextSecondNumber.getText().toString());
+
+        // TODO check if the user inserted values
+        ResultFragment resultFragment = new ResultFragment();
+        resultFragment.setNumbers(firstNumber, secondNumber);
+        HandlingFragments.initFragment(SumActivity.this, R.id.framePlaceholderSum, resultFragment);
+    }
 }

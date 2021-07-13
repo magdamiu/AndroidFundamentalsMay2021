@@ -35,8 +35,18 @@ public class ResultFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_result, container, false);
         textViewResult = view.findViewById(R.id.textViewResult);
 
+        displayResult();
+        return view;
+    }
+
+    private void displayResult() {
+        // TODO validate number1 and number2
         int sum = number1 + number2;
         textViewResult.setText(String.valueOf(sum));
-        return view;
+    }
+
+    public void setNumbers(int number1, int number2) {
+        this.number1 = number1;
+        this.number2 = number2;
     }
 }
