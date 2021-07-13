@@ -73,4 +73,6 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="start_comm_fragment_activity">Start Communication Fragment - Activity</string>
     <string name="button_with_bundle">Button with Bundle</string>
     <string name="button_with_method">Button with method</string>
+    <string name="send_data_to_activity">Send data to activity</string>
+    <string name="listener_communication_activity_fragment">Listener Communication Activity - Fragment</string>
 </resources>

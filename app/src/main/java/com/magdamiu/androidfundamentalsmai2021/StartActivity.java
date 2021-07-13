@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.DynamicFragmentActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.ResultActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
 
@@ -65,5 +66,10 @@ public class StartActivity extends AppCompatActivity {
     public void startBundleCommFragmentOnClick(View view) {
         Intent intentToStartSumActivity = new Intent(StartActivity.this, SumActivity.class);
         startActivity(intentToStartSumActivity);
+    }
+
+    public void startListenerCommFragmentOnClick(View view) {
+        Intent intentToStartResultActivity = new Intent(StartActivity.this, ResultActivity.class);
+        startActivity(intentToStartResultActivity);
     }
 }
