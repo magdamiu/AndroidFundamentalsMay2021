@@ -66,4 +66,6 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="hello_from_first_activity">hello from first activity</string>
     <string name="sample_startactivityforresult">Sample startActivityForResult</string>
     <string name="confirm_message">Yes, I\'m here! :)</string>
+    <string name="start_second_activity">Start Second Activity</string>
+    <string name="this_is_the_second_activity">This is the second activity!</string>
 </resources>
