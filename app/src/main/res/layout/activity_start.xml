@@ -31,4 +31,28 @@
         android:layout_height="wrap_content"
         android:text="@string/start_firstactivity"
         android:onClick="startFirstActivityOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_static_fragment_in_activity"
+        android:onClick="startStaticFragmentOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_dynamic_fragment_in_activity"
+        android:onClick="startDynamicFragmentOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_comm_fragment_activity"
+        android:onClick="startBundleCommFragmentOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listener_communication_activity_fragment"
+        android:onClick="startListenerCommFragmentOnClick"/>
 </LinearLayout>

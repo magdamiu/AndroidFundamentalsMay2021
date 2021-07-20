@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.DynamicFragmentActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.ResultActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
+import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -47,5 +51,25 @@ public class StartActivity extends AppCompatActivity {
     public void startFirstActivityOnClick(View view) {
         Intent intentToStartFirstActivity = new Intent(StartActivity.this, FirstActivity.class);
         startActivity(intentToStartFirstActivity);
+    }
+
+    public void startStaticFragmentOnClick(View view) {
+        Intent intentToStartStaticFragmentActivity = new Intent(StartActivity.this, StaticFragmentActivity.class);
+        startActivity(intentToStartStaticFragmentActivity);
+    }
+
+    public void startDynamicFragmentOnClick(View view) {
+        Intent intentToStartDynamicFragmentActivity = new Intent(StartActivity.this, DynamicFragmentActivity.class);
+        startActivity(intentToStartDynamicFragmentActivity);
+    }
+
+    public void startBundleCommFragmentOnClick(View view) {
+        Intent intentToStartSumActivity = new Intent(StartActivity.this, SumActivity.class);
+        startActivity(intentToStartSumActivity);
+    }
+
+    public void startListenerCommFragmentOnClick(View view) {
+        Intent intentToStartResultActivity = new Intent(StartActivity.this, ResultActivity.class);
+        startActivity(intentToStartResultActivity);
     }
 }
