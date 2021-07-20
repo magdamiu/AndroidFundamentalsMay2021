@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.AdapterView;
@@ -16,13 +17,20 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+<<<<<<< HEAD
+=======
+import java.util.regex.Pattern;
+>>>>>>> curs3_cc1
 
 public class MainActivity extends AppCompatActivity {
     private static final String ANDROID_URL = "https://developer.android.com/";
 
+    private EditText phone;
+    private EditText email;
     private EditText editTextName;
     private Button buttonDisplayGreetings;
     private TextView textViewGreetings;
+<<<<<<< HEAD
 
     private WebView webView;
 
@@ -30,10 +38,17 @@ public class MainActivity extends AppCompatActivity {
     private List<String> androidVersions;
     private ArrayAdapter<String> spinnerAdapter;
 
+=======
+    private WebView webView;
+    private Spinner spinnerAndroidVersions;
+    private List<String> androidVersions;
+    private ArrayAdapter<String> spinnerAdapter;
+>>>>>>> curs3_cc1
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*setContentView(R.layout.activity_main);*/
+<<<<<<< HEAD
         /*setContentView(R.layout.sample);*/
         // setContentView(R.layout.scrollview_sample);
         // setContentView(R.layout.webview_sample);
@@ -47,7 +62,56 @@ public class MainActivity extends AppCompatActivity {
         //loadUrl();
 
         // initViews();
+=======
+//        setContentView(R.layout.web_view_sample);
+//        load_url();
+        setContentView(R.layout.spinner_sample);
+        setAndroidVersions();
+//        initViews();
+        initializeSpinnerAdapter();
+        setSpinnerAdapter();
+>>>>>>> curs3_cc1
         displayLogs();
+    }
+    // step 1:  data source for our spinner
+    private void setAndroidVersions() {
+        androidVersions = new ArrayList<>();
+        androidVersions.add("cupcake");
+        androidVersions.add("eclair");
+        androidVersions.add("donut");
+        androidVersions.add("pie");
+    }
+
+    private void initializeSpinnerAdapter() {
+        spinnerAdapter = new ArrayAdapter<>(MainActivity.this,
+                android.R.layout.simple_spinner_item,
+                androidVersions);
+    }
+
+    private void setSpinnerAdapter() {
+        spinnerAndroidVersions = findViewById(R.id.spinnerAndroidVersions);
+        spinnerAndroidVersions.setAdapter(spinnerAdapter);
+    }
+
+    private void handlingSpinnerListener() {
+        spinnerAndroidVersions.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+                String selectedAndroidVersion = androidVersions.get(i);
+                Toast.makeText(MainActivity.this, selectedAndroidVersion, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    private void load_url() {
+        webView = findViewById(R.id.webViewSample);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl(getString(R.string.ANDROID_URL));
     }
 
     // step 1: data source for our spinner
@@ -126,6 +190,28 @@ public class MainActivity extends AppCompatActivity {
         } else {
             editTextName.setError(getString(R.string.error_insert_name));
             Toast.makeText(MainActivity.this, getString(R.string.error_insert_name), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    boolean isPhoneNumber(String phoneNumber) {
+        return Patterns.PHONE.matcher(phoneNumber).matches();
+    }
+
+    boolean isEmail(String email) {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    public void submitInformation(View view) {
+
+        phone = findViewById(R.id.phone);
+        email = findViewById(R.id.email);
+        if (!isPhoneNumber(phone.toString())) {
+            Toast.makeText(MainActivity.this, getString(R.string.wrong_phone_pattern), Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        if (!isEmail(email.toString())) {
+            Toast.makeText(MainActivity.this, getString(R.string.wrong_email_pattern), Toast.LENGTH_LONG).show();
         }
     }
 }
