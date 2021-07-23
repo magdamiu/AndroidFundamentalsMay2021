@@ -17,7 +17,10 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second_code_challenge);
 
         textViewPassages = findViewById(R.id.textViewPassages);
+        getExtrasFromBundle();
+    }
 
+    private void getExtrasFromBundle() {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             String passageReceived = bundle.getString(FirstActivity.PASSAGE);
