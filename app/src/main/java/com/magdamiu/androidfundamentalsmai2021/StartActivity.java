@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+import com.magdamiu.androidfundamentalsmai2021.course5codechallenge2.FirstActivity;
 
 public class StartActivity extends AppCompatActivity {
 
