@@ -7,7 +7,7 @@
     tools:context=".activities.SecondActivity">
 
     <TextView
-        android:id="@+id/textViewReply"
+        android:id="@+id/textViewMessageActivities"
         android:text="@string/hello_world_from_android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:inputType="textPersonName"
         android:hint="@string/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewReply"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessageActivities"
         android:autofillHints="Name" />
 
     <CheckBox

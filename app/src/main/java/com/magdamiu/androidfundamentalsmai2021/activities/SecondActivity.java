@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Log.e(SECOND_TAG, "onCreate method was called");
 
-        textViewMessage = findViewById(R.id.textViewReply);
+        textViewMessage = findViewById(R.id.textViewMessageActivities);
         editTextPersonName = findViewById(R.id.editTextPersonName);
         checkBoxTermsAndConditions = findViewById(R.id.checkBoxTermsAndConditions);
 

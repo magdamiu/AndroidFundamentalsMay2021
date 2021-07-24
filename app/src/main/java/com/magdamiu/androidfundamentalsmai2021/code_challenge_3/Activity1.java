@@ -23,7 +23,7 @@ public class Activity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_1);
         textViewReplyReceived = findViewById(R.id.textViewReplyReceived);
-        textViewReply = findViewById(R.id.textViewReply);
+        textViewReply = findViewById(R.id.textViewMessageActivities);
         editTextMessage = findViewById(R.id.editTextMessage);
 
         processBundle();
