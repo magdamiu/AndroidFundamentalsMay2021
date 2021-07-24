@@ -4,4 +4,6 @@
     <dimen name="medium_space">16dp</dimen>
     <dimen name="space_128">128dp</dimen>
     <dimen name="space_64">64dp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_18">18sp</dimen>
 </resources>
