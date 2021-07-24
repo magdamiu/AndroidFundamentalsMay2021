@@ -43,7 +43,7 @@ public class Activity2 extends AppCompatActivity {
         if (!reply.isEmpty()) {
             Intent intentToStartActivity1 = new Intent(Activity2.this, Activity1.class);
             intentToStartActivity1.putExtra(Activity1.MESSAGE, reply);
-            startActivityForResult(intentToStartActivity1, Activity1.REQUEST_CODE_ACTIVITY_1);
+            startActivity(intentToStartActivity1);
         } else {
             editTextReply.setError(getString(R.string.error_insert_reply));
         }
