@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsMai2021">
-        <activity android:name=".activities.SecondActivity"></activity>
+        <activity android:name=".code_challenge_3.Activity2" />
+        <activity android:name=".code_challenge_3.Activity1" />
+        <activity android:name=".activities.SecondActivity" />
         <activity android:name=".activities.FirstActivity" />
         <activity android:name=".ConstraintLayoutSampleActivity" />
         <activity android:name=".MainActivity" />

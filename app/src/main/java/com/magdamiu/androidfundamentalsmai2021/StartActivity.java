@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+import com.magdamiu.androidfundamentalsmai2021.code_challenge_3.Activity1;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -47,5 +48,10 @@ public class StartActivity extends AppCompatActivity {
     public void startFirstActivityOnClick(View view) {
         Intent intentToStartFirstActivity = new Intent(StartActivity.this, FirstActivity.class);
         startActivity(intentToStartFirstActivity);
+    }
+
+    public void startActivity1OnClick(View view) {
+        Intent intentToStartActivity1 = new Intent(StartActivity.this, Activity1.class);
+        startActivity(intentToStartActivity1);
     }
 }
