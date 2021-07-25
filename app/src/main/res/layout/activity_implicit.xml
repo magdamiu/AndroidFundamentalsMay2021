@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".code_challenge_4.ImplicitActivity">
+
+    <EditText
+        android:id="@+id/editTextWebsite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:autofillHints="@string/website"
+        android:ems="10"
+        android:hint="@string/website"
+        android:inputType="textWebEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:onClick="openWebsiteOnClick"
+        android:text="@string/open_website"
+        app:layout_constraintStart_toStartOf="@+id/editTextWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWebsite" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:autofillHints="@string/location"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWebsite" />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:onClick="openLocationOnClick"
+        android:text="@string/open_location"
+        app:layout_constraintStart_toStartOf="@+id/editTextLocation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocation" />
+
+    <EditText
+        android:id="@+id/editTextShareText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:autofillHints="@string/text"
+        android:ems="10"
+        android:hint="@string/text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocation" />
+
+    <Button
+        android:id="@+id/buttonShareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:onClick="shareTextOnClick"
+        android:text="@string/share_text"
+        app:layout_constraintStart_toStartOf="@+id/editTextShareText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextShareText" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:autofillHints="@string/phone_number"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShareText" />
+
+    <Button
+        android:id="@+id/buttonPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_8"
+        android:onClick="callPhoneNumberOnClick"
+        android:text="@string/call"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>

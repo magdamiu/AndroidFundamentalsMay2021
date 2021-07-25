@@ -11,24 +11,30 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_mainactivity"
-        android:onClick="startMainActivityOnClick"/>
+        android:onClick="startMainActivityOnClick"
+        android:text="@string/start_mainactivity" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_recyclerview_activity"
-        android:onClick="startRecyclerViewActivityOnClick"/>
+        android:onClick="startRecyclerViewActivityOnClick"
+        android:text="@string/start_recyclerview_activity" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_constraint_activity"
-        android:onClick="startConstraintActivityOnClick"/>
+        android:onClick="startConstraintActivityOnClick"
+        android:text="@string/start_constraint_activity" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_firstactivity"
-        android:onClick="startFirstActivityOnClick"/>
+        android:onClick="startFirstActivityOnClick"
+        android:text="@string/start_firstactivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startImplicitActivityOnClick"
+        android:text="@string/start_code_challenge_4" />
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
+import com.magdamiu.androidfundamentalsmai2021.code_challenge_4.ImplicitActivity;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -47,5 +48,10 @@ public class StartActivity extends AppCompatActivity {
     public void startFirstActivityOnClick(View view) {
         Intent intentToStartFirstActivity = new Intent(StartActivity.this, FirstActivity.class);
         startActivity(intentToStartFirstActivity);
+    }
+
+    public void startImplicitActivityOnClick(View view) {
+        Intent intentToStartImplicitActivity = new Intent(StartActivity.this, ImplicitActivity.class);
+        startActivity(intentToStartImplicitActivity);
     }
 }
