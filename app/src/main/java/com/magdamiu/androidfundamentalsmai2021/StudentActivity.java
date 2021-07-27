@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.List;
 public class StudentActivity extends AppCompatActivity {
 
     private List<Student> students;
-
+    private static Context context;
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private StudentAdapter studentAdapter;
@@ -20,6 +21,7 @@ public class StudentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StudentActivity.context = getApplicationContext();
         setContentView(R.layout.activity_students);
 
         // data source for our RecyclerView
@@ -56,5 +58,9 @@ public class StudentActivity extends AppCompatActivity {
     private void setAdapter() {
         studentAdapter = new StudentAdapter(students);
         recyclerView.setAdapter(studentAdapter);
+    }
+
+    public static Context getAppContext() {
+        return StudentActivity.context;
     }
 }

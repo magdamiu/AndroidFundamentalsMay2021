@@ -1,11 +1,12 @@
 package com.magdamiu.androidfundamentalsmai2021;
 
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -29,7 +30,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentViewHolder> {
     public void onBindViewHolder(@NonNull StudentViewHolder holder, int position) {
         Student currentStudent = students.get(position);
         if (position % 2  == 1){
-            holder.getStudentView().setBackgroundColor(Color.argb(125, 204, 204, 204));
+            holder.getStudentView().setBackgroundColor(ContextCompat.getColor(StudentActivity.getAppContext(), R.color.grey));
         }
         holder.getTextFirstName().setText(currentStudent.getFirstName());
         holder.getTextLastName().setText(currentStudent.getLastName());
