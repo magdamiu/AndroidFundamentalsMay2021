@@ -79,4 +79,9 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="this_is_the_first_text">this is the first text</string>
     <string name="this_is_the_second_text">this is the second text</string>
     <string name="cardviewsample">CardViewSample</string>
+    <string name="fab_sample">fab sample</string>
+    <string name="error_occured">error</string>
+    <string name="retry">retry</string>
+    <string name="retry_message">please try again</string>
+    <string name="placeholder_text">Placeholder text</string>
 </resources>

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/animation"
+    android:orientation="vertical"
     android:padding="@dimen/medium_space"
     tools:context=".styles.CardViewActivity">
 
@@ -53,5 +54,32 @@
                 android:text="@string/this_is_the_second_text" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:contentDescription="@string/fab_sample"
+        android:onClick="fabOnClick"
+        android:src="@android:drawable/ic_input_add"
+        app:fabSize="normal"
+        app:rippleColor="@color/purple_700"
+        app:tint="@android:color/white" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>
