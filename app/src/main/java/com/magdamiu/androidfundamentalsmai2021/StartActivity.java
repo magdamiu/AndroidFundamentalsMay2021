@@ -5,19 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.magdamiu.androidfundamentalsmai2021.activities.FirstActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.DynamicFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.ResultActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
+import com.magdamiu.androidfundamentalsmai2021.styles.CardViewActivity;
+
+import static com.magdamiu.androidfundamentalsmai2021.R.*;
 
 public class StartActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(layout.activity_start);
 
         // debugSample();
     }
@@ -71,5 +75,16 @@ public class StartActivity extends AppCompatActivity {
     public void startListenerCommFragmentOnClick(View view) {
         Intent intentToStartResultActivity = new Intent(StartActivity.this, ResultActivity.class);
         startActivity(intentToStartResultActivity);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Toast.makeText(StartActivity.this, string.on_back_pressed, Toast.LENGTH_LONG).show();
+    }
+
+    public void startCardViewActivityOnClick(View view) {
+        Intent intentToStartCardViewActivity = new Intent(StartActivity.this, CardViewActivity.class);
+        startActivity(intentToStartCardViewActivity);
     }
 }
