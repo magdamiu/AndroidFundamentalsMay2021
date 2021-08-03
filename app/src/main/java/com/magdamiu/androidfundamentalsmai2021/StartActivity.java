@@ -14,6 +14,7 @@ import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
 import com.magdamiu.androidfundamentalsmai2021.retrofit.GithubActivity;
 import com.magdamiu.androidfundamentalsmai2021.store_data.SharedPreferencesSampleActivity;
+import com.magdamiu.androidfundamentalsmai2021.store_data.WordsActivity;
 import com.magdamiu.androidfundamentalsmai2021.styles.CardViewActivity;
 
 import static com.magdamiu.androidfundamentalsmai2021.R.*;
@@ -98,5 +99,10 @@ public class StartActivity extends AppCompatActivity {
     public void startSharedPreferencesActivityOnClick(View view) {
         Intent intentToStartSharedPreferencesActivity = new Intent(StartActivity.this, SharedPreferencesSampleActivity.class);
         startActivity(intentToStartSharedPreferencesActivity);
+    }
+
+    public void startWordsActivityActivityOnClick(View view) {
+        Intent intentToStartWordsActivity = new Intent(StartActivity.this, WordsActivity.class);
+        startActivity(intentToStartWordsActivity);
     }
 }
