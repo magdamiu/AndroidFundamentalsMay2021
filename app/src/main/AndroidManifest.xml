@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFundamentalsMai2021">
-        <activity android:name=".styles.CardViewActivity"></activity>
+        <activity android:name=".retrofit.GithubActivity"></activity>
+        <activity android:name=".styles.CardViewActivity" />
         <activity android:name=".fragments.ResultActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

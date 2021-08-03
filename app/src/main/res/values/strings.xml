@@ -84,4 +84,5 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="retry">retry</string>
     <string name="retry_message">please try again</string>
     <string name="placeholder_text">Placeholder text</string>
+    <string name="retrofit_github">Retrofit - Github</string>
 </resources>

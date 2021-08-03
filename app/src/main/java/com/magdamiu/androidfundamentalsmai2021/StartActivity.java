@@ -12,6 +12,7 @@ import com.magdamiu.androidfundamentalsmai2021.fragments.DynamicFragmentActivity
 import com.magdamiu.androidfundamentalsmai2021.fragments.ResultActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
+import com.magdamiu.androidfundamentalsmai2021.retrofit.GithubActivity;
 import com.magdamiu.androidfundamentalsmai2021.styles.CardViewActivity;
 
 import static com.magdamiu.androidfundamentalsmai2021.R.*;
@@ -86,5 +87,10 @@ public class StartActivity extends AppCompatActivity {
     public void startCardViewActivityOnClick(View view) {
         Intent intentToStartCardViewActivity = new Intent(StartActivity.this, CardViewActivity.class);
         startActivity(intentToStartCardViewActivity);
+    }
+
+    public void startGithubActivityOnClick(View view) {
+        Intent intentToStartGithubActivity = new Intent(StartActivity.this, GithubActivity.class);
+        startActivity(intentToStartGithubActivity);
     }
 }
