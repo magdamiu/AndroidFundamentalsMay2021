@@ -85,4 +85,7 @@ Ut fermentum feugiat lorem sed ultrices. Phasellus et mattis diam. Sed faucibus 
     <string name="retry_message">please try again</string>
     <string name="placeholder_text">Placeholder text</string>
     <string name="retrofit_github">Retrofit - Github</string>
+    <string name="save_data_to_shared_preferences">Save data to Shared Preferences</string>
+    <string name="get_data_from_shared_preferences">Get data from Shared Preferences</string>
+    <string name="shared_preferences">Shared Preferences</string>
 </resources>

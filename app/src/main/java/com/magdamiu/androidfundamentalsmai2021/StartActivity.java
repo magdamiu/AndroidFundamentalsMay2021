@@ -13,6 +13,7 @@ import com.magdamiu.androidfundamentalsmai2021.fragments.ResultActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.StaticFragmentActivity;
 import com.magdamiu.androidfundamentalsmai2021.fragments.SumActivity;
 import com.magdamiu.androidfundamentalsmai2021.retrofit.GithubActivity;
+import com.magdamiu.androidfundamentalsmai2021.store_data.SharedPreferencesSampleActivity;
 import com.magdamiu.androidfundamentalsmai2021.styles.CardViewActivity;
 
 import static com.magdamiu.androidfundamentalsmai2021.R.*;
@@ -92,5 +93,10 @@ public class StartActivity extends AppCompatActivity {
     public void startGithubActivityOnClick(View view) {
         Intent intentToStartGithubActivity = new Intent(StartActivity.this, GithubActivity.class);
         startActivity(intentToStartGithubActivity);
+    }
+
+    public void startSharedPreferencesActivityOnClick(View view) {
+        Intent intentToStartSharedPreferencesActivity = new Intent(StartActivity.this, SharedPreferencesSampleActivity.class);
+        startActivity(intentToStartSharedPreferencesActivity);
     }
 }
