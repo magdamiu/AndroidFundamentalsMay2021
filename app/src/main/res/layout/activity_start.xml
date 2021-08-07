@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:padding="@dimen/medium_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startMainActivityOnClick"
+            android:text="@string/start_mainactivity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startRecyclerViewActivityOnClick"
+            android:text="@string/start_recyclerview_activity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startConstraintActivityOnClick"
+            android:text="@string/start_constraint_activity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startFirstActivityOnClick"
+            android:text="@string/start_firstactivity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startStaticFragmentOnClick"
+            android:text="@string/start_static_fragment_in_activity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startDynamicFragmentOnClick"
+            android:text="@string/start_dynamic_fragment_in_activity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startBundleCommFragmentOnClick"
+            android:text="@string/start_comm_fragment_activity" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startListenerCommFragmentOnClick"
+            android:text="@string/listener_communication_activity_fragment" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startCardViewActivityOnClick"
+            android:text="@string/cardviewsample" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startGithubActivityOnClick"
+            android:text="@string/retrofit_github" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startSharedPreferencesActivityOnClick"
+            android:text="@string/shared_preferences" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startWordsActivityActivityOnClick"
+            android:text="@string/room" />
+    </LinearLayout>
+</ScrollView>
