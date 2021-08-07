@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_space">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/please_add_your_name_here"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/buttonDisplayGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="displayGreetingsOnClick"
+        android:text="@string/greetings" />
+
+    <TextView
+        android:id="@+id/textViewGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hello adhajhaskdha hdak" />
+
+    <LinearLayout android:layout_marginTop="@dimen/medium_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/textview_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200" />
+
+        <TextView
+            android:text="@string/textview_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200" />
+
+        <TextView
+            android:text="@string/textview_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_marginTop="@dimen/medium_space"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="120dp">
+
+        <TextView
+            android:text="@string/textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" />
+
+        <TextView
+            android:text="@string/textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/teal_200" />
+
+        <TextView
+            android:text="@string/textview_3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/teal_700" />
+    </LinearLayout>
+
+</LinearLayout>
